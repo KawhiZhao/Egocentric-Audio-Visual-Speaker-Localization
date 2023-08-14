@@ -20,10 +20,12 @@
 4. Evaluation
 
     Put the path of pretrained model in `args.load_path` in `main_avst.py`\
+
     Comment the training code \
     `trainer.fit(model, data_module)`\
+    
     Uncomment the code block\
-    `   checkpoint = torch.load(args.load_path)`
+    `   checkpoint = torch.load(args.load_path)`\
      `   model.load_state_dict(checkpoint['state_dict'])`\
         `model.eval()`
     
@@ -46,10 +48,12 @@
 4. Evaluation
 
     Put the path of pretrained model in `args.load_path` in `main.py`\
+
     Comment the training code \
     `trainer.fit(model, data_module)`\
+
     Uncomment the code block\
-    `   checkpoint = torch.load(args.load_path)`
+    `   checkpoint = torch.load(args.load_path)`\
      `   model.load_state_dict(checkpoint['state_dict'])`\
         `model.eval()`
 
