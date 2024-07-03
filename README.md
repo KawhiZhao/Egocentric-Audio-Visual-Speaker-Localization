@@ -32,20 +32,22 @@
 
 ## Experiments on EasyCom
 
-1. Split the dataset into chunks so that every chunk in a subfolder containing image, audio, gt
+1. Split the data into training set and test set. Session 1, 2, 3 will be in the test set and the remaining sessions will be in the training set. The whole video list can be found in `video.txt` under the `EasyCom` folder.
+
+2. Split the dataset into chunks so that every chunk in a subfolder containing image, audio, gt
 
     `cd data` \
     Using the function `split` in `split.py`
 
-2. Calculate GCCPHAT for each audio clip in each chunk
+3. Calculate GCCPHAT for each audio clip in each chunk
 
     Using the function `test` in `gccphat.py`
 
-3. Train
+4. Train
 
     `python main.py`
 
-4. Evaluation
+5. Evaluation
 
     Put the path of pretrained model in `args.load_path` in `main.py`
 
